@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:twittersdk="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.OneTweetFragment">
+
+    <com.twitter.sdk.android.tweetui.CompactTweetView
+        android:id="@+id/myCompactView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        twittersdk:tw__tweet_id="669628049898377216"
+        android:layout_centerVertical="true">
+
+    </com.twitter.sdk.android.tweetui.CompactTweetView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myClickerCrutch"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/myCompactView"
+        android:layout_alignBottom="@+id/myCompactView"
+        android:clickable="true">
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabUp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_arrow_up_bold"
+        app:backgroundTint="@color/main_color"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabDown"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_arrow_down_bold"
+        app:backgroundTint="@color/main_color"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+    <ua.cc.tomik.twitteronixexam.ZoomableImageView
+        android:id="@+id/fullImageViewZoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#ffffff"
+        />
+
+
+</RelativeLayout>
+<!-- From: file:/D:/Android/ONIX/TwitterOnixExam/app/src/main/res/layout/fragment_onetweet.xml -->

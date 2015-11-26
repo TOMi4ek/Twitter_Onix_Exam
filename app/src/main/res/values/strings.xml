@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Twitter Onix Exam</string>
+    <string name="menu_skills">My skills</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_help">Help</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_gmaps">Map</string>
+    <string name="indicative_snippet">Магазин компьютерной техники "Indicative"</string>
+    <string name="hydrosila_snippet">Завод "Гидросила"</string>
+    <string name="zirka_snippet">Стадион "Зирка"</string>
+</resources>
