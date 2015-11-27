@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         twittersdk:tw__tweet_id="669628049898377216"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:visibility="invisible">
 
     </com.twitter.sdk.android.tweetui.CompactTweetView>
 

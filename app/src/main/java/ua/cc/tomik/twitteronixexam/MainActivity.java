@@ -91,6 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onPageSelected(int position) {
                 tabName.setText(tabNames[position]);
+                if (position == 0){
+                    switchButton.setVisibility(View.VISIBLE);
+                }else{
+                    switchButton.setVisibility(View.INVISIBLE);
+                }
 
             }
 
@@ -107,41 +112,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         switch (id) {
             case R.id.button_map: {
-                Toast.makeText(this, "map button", Toast.LENGTH_SHORT).show();
                 pager.setCurrentItem(2);
             }
             break;
             case R.id.button_home: {
-                Toast.makeText(this, "home button", Toast.LENGTH_SHORT).show();
                 pager.setCurrentItem(0);
             }
             break;
             case R.id.button_user: {
-                Toast.makeText(this, "user button", Toast.LENGTH_SHORT).show();
                 pager.setCurrentItem(1);
             }
             break;
             case R.id.button_settings: {
-                Toast.makeText(this, "settings button", Toast.LENGTH_SHORT).show();
                 pager.setCurrentItem(3);
             }
             break;
             case R.id.switchHomeButton: {
                 if (homeTimeLineState){
                     homeTimeLineState = false;
-                    mAdapter.setTimelineState(homeTimeLineState);
-                    pager.setAdapter(mAdapter);
+                    mAdapter.setTimelineState(false);
                     switchButton.setImageResource(R.drawable.ic_view_list);
-
                 }else{
                     homeTimeLineState = true;
-                    mAdapter.setTimelineState(homeTimeLineState);
-                    pager.setAdapter(mAdapter);
+                    mAdapter.setTimelineState(true);
                     switchButton.setImageResource(R.drawable.ic_file);
                 }
-                pager.setCurrentItem(0);
             }
             break;
+            case R.id.menuButton:{
+                if (isNavDrawerOpen()) {
+                    closeNavDrawer();
+                } else {
+                    openNavDrawer();
+                }
+            }
         }
     }
 
@@ -157,7 +161,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void closeNavDrawer() {
         if (drawerLayout != null) {
             drawerLayout.closeDrawer(GravityCompat.END);
+
         }
+    }
+
+    private void openNavDrawer(){
+        if (drawerLayout != null) {
+            drawerLayout.openDrawer(GravityCompat.END);
+        }
+
     }
 
     private boolean isNavDrawerOpen() {

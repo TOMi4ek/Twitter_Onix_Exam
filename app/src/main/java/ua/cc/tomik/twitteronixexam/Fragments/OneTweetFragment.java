@@ -90,6 +90,7 @@ public class OneTweetFragment extends Fragment implements View.OnClickListener{
                     public void success(Result<List<Tweet>> listResult) {
                         mTweetList = listResult.data;
                         myTweetView.setTweet(mTweetList.get(mCounter));
+                        myTweetView.setVisibility(View.VISIBLE);
                         if (mCounter == 0) fabPrevious.hide();
                     }
 
