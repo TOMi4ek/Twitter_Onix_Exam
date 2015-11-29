@@ -122,13 +122,13 @@ public final class R {
 	public static final class string {
 		public static final int kit_name = 0x7f070085;
 		public static final int tw__allow_btn_txt = 0x7f070065;
-		public static final int tw__composer_hint = 0x7f070090;
-		public static final int tw__install = 0x7f070091;
+		public static final int tw__composer_hint = 0x7f070091;
+		public static final int tw__install = 0x7f070092;
 		public static final int tw__login_btn_txt = 0x7f070067;
-		public static final int tw__max_tweet_chars = 0x7f070092;
+		public static final int tw__max_tweet_chars = 0x7f070093;
 		public static final int tw__not_now_btn_txt = 0x7f070068;
-		public static final int tw__play_store = 0x7f070093;
-		public static final int tw__post_tweet = 0x7f070094;
+		public static final int tw__play_store = 0x7f070094;
+		public static final int tw__post_tweet = 0x7f070095;
 		public static final int tw__share_email_desc = 0x7f07006d;
 		public static final int tw__share_email_title = 0x7f07006e;
 	}

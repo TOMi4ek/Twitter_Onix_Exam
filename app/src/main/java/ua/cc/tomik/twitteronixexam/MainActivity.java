@@ -64,11 +64,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             break;
                             case R.id.menu_logout:
                                 Twitter.getSessionManager().clearActiveSession();
-                                Intent logout = new Intent(MainActivity.this, LoginActivity.class);
-                                logout.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(logout);
+                                Intent logoutIntent = new Intent(MainActivity.this, LoginActivity.class);
+                                logoutIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(logoutIntent);
                                 break;
                             case R.id.menu_skills:
+                                Intent skillsIntent = new Intent(MainActivity.this, SkillTab.class);
+                                startActivity(skillsIntent);
                                 break;
                         }
                         closeNavDrawer();

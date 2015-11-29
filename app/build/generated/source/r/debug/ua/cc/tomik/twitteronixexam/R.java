@@ -3631,21 +3631,22 @@ containing a value of this type.
         public static final int mr_media_route_controller_stop=0x7f07008c;
         public static final int mr_system_route_name=0x7f070038;
         public static final int mr_user_route_category_name=0x7f070039;
+        public static final int skill=0x7f07008d;
         public static final int status_bar_notification_info_overflow=0x7f07003a;
-        public static final int store_picture_message=0x7f07008d;
-        public static final int store_picture_title=0x7f07008e;
-        public static final int title_activity_gmaps=0x7f07008f;
+        public static final int store_picture_message=0x7f07008e;
+        public static final int store_picture_title=0x7f07008f;
+        public static final int title_activity_gmaps=0x7f070090;
         public static final int tw__allow_btn_txt=0x7f070065;
-        public static final int tw__composer_hint=0x7f070090;
-        public static final int tw__install=0x7f070091;
+        public static final int tw__composer_hint=0x7f070091;
+        public static final int tw__install=0x7f070092;
         public static final int tw__like_tweet=0x7f070072;
         public static final int tw__liked_tweet=0x7f070073;
         public static final int tw__loading_tweet=0x7f070066;
         public static final int tw__login_btn_txt=0x7f070067;
-        public static final int tw__max_tweet_chars=0x7f070092;
+        public static final int tw__max_tweet_chars=0x7f070093;
         public static final int tw__not_now_btn_txt=0x7f070068;
-        public static final int tw__play_store=0x7f070093;
-        public static final int tw__post_tweet=0x7f070094;
+        public static final int tw__play_store=0x7f070094;
+        public static final int tw__post_tweet=0x7f070095;
         public static final int tw__relative_date_format_long=0x7f070069;
         public static final int tw__relative_date_format_short=0x7f07006a;
         public static final int tw__retweeted_by_format=0x7f07006b;
@@ -3656,7 +3657,7 @@ containing a value of this type.
         public static final int tw__share_tweet=0x7f070070;
         public static final int tw__tweet_content_description=0x7f070071;
         public static final int wallet_buy_button_place_holder=0x7f07003b;
-        public static final int zirka_snippet=0x7f070095;
+        public static final int zirka_snippet=0x7f070096;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0b0082;
